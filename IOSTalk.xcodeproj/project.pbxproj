@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CEB913C116B22811107DB03 /* Pods_IOSTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D99905829F47DD202BFEB3D /* Pods_IOSTalk.framework */; };
 		699999122713D94C00A5185F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999112713D94C00A5185F /* AppDelegate.swift */; };
 		699999142713D94C00A5185F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999132713D94C00A5185F /* SceneDelegate.swift */; };
 		699999162713D94C00A5185F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999152713D94C00A5185F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323C4F3C51408FDC4E4D9809 /* Pods-IOSTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTalk.release.xcconfig"; path = "Target Support Files/Pods-IOSTalk/Pods-IOSTalk.release.xcconfig"; sourceTree = "<group>"; };
 		6999990E2713D94C00A5185F /* IOSTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699999112713D94C00A5185F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699999132713D94C00A5185F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6999991A2713D94D00A5185F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6999991D2713D94D00A5185F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6999991F2713D94D00A5185F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D99905829F47DD202BFEB3D /* Pods_IOSTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5235088C55C9EF76C5A8530 /* Pods-IOSTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTalk.debug.xcconfig"; path = "Target Support Files/Pods-IOSTalk/Pods-IOSTalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CEB913C116B22811107DB03 /* Pods_IOSTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				699999102713D94C00A5185F /* IOSTalk */,
 				6999990F2713D94C00A5185F /* Products */,
+				F9FB076D98860F4858B96D57 /* Pods */,
+				6C584EAD5C60081A4CADFEA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = IOSTalk;
 			sourceTree = "<group>";
 		};
+		6C584EAD5C60081A4CADFEA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D99905829F47DD202BFEB3D /* Pods_IOSTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9FB076D98860F4858B96D57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5235088C55C9EF76C5A8530 /* Pods-IOSTalk.debug.xcconfig */,
+				323C4F3C51408FDC4E4D9809 /* Pods-IOSTalk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 699999222713D94D00A5185F /* Build configuration list for PBXNativeTarget "IOSTalk" */;
 			buildPhases = (
+				469A78F798E1AB4A7AF61F40 /* [CP] Check Pods Manifest.lock */,
 				6999990A2713D94C00A5185F /* Sources */,
 				6999990B2713D94C00A5185F /* Frameworks */,
 				6999990C2713D94C00A5185F /* Resources */,
+				A177D291D91741FCF4E4F0D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		469A78F798E1AB4A7AF61F40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A177D291D91741FCF4E4F0D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSTalk/Pods-IOSTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSTalk/Pods-IOSTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSTalk/Pods-IOSTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6999990A2713D94C00A5185F /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		699999232713D94D00A5185F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5235088C55C9EF76C5A8530 /* Pods-IOSTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		699999242713D94D00A5185F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323C4F3C51408FDC4E4D9809 /* Pods-IOSTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
