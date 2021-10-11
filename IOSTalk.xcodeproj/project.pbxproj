@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CEB913C116B22811107DB03 /* Pods_IOSTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D99905829F47DD202BFEB3D /* Pods_IOSTalk.framework */; };
+		691C01D2271450B200889430 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 691C01D1271450B100889430 /* GoogleService-Info.plist */; };
 		699999122713D94C00A5185F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999112713D94C00A5185F /* AppDelegate.swift */; };
 		699999142713D94C00A5185F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999132713D94C00A5185F /* SceneDelegate.swift */; };
 		699999162713D94C00A5185F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999152713D94C00A5185F /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		323C4F3C51408FDC4E4D9809 /* Pods-IOSTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTalk.release.xcconfig"; path = "Target Support Files/Pods-IOSTalk/Pods-IOSTalk.release.xcconfig"; sourceTree = "<group>"; };
+		691C01D1271450B100889430 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6999990E2713D94C00A5185F /* IOSTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699999112713D94C00A5185F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699999132713D94C00A5185F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		699999102713D94C00A5185F /* IOSTalk */ = {
 			isa = PBXGroup;
 			children = (
+				691C01D1271450B100889430 /* GoogleService-Info.plist */,
 				699999112713D94C00A5185F /* AppDelegate.swift */,
 				699999132713D94C00A5185F /* SceneDelegate.swift */,
 				699999152713D94C00A5185F /* ViewController.swift */,
@@ -88,7 +91,6 @@
 				C5235088C55C9EF76C5A8530 /* Pods-IOSTalk.debug.xcconfig */,
 				323C4F3C51408FDC4E4D9809 /* Pods-IOSTalk.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6999991E2713D94D00A5185F /* LaunchScreen.storyboard in Resources */,
+				691C01D2271450B200889430 /* GoogleService-Info.plist in Resources */,
 				6999991B2713D94D00A5185F /* Assets.xcassets in Resources */,
 				699999192713D94C00A5185F /* Main.storyboard in Resources */,
 			);
