@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		0CEB913C116B22811107DB03 /* Pods_IOSTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D99905829F47DD202BFEB3D /* Pods_IOSTalk.framework */; };
 		691C01D2271450B200889430 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 691C01D1271450B100889430 /* GoogleService-Info.plist */; };
+		691C01D52714573F00889430 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C01D42714573F00889430 /* UIColor.swift */; };
+		691C01D727145CC000889430 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 691C01D627145CC000889430 /* RemoteConfigDefaults.plist */; };
 		699999122713D94C00A5185F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999112713D94C00A5185F /* AppDelegate.swift */; };
 		699999142713D94C00A5185F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999132713D94C00A5185F /* SceneDelegate.swift */; };
-		699999162713D94C00A5185F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999152713D94C00A5185F /* ViewController.swift */; };
+		699999162713D94C00A5185F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699999152713D94C00A5185F /* SplashViewController.swift */; };
 		699999192713D94C00A5185F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699999172713D94C00A5185F /* Main.storyboard */; };
 		6999991B2713D94D00A5185F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6999991A2713D94D00A5185F /* Assets.xcassets */; };
 		6999991E2713D94D00A5185F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6999991C2713D94D00A5185F /* LaunchScreen.storyboard */; };
@@ -20,10 +22,12 @@
 /* Begin PBXFileReference section */
 		323C4F3C51408FDC4E4D9809 /* Pods-IOSTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTalk.release.xcconfig"; path = "Target Support Files/Pods-IOSTalk/Pods-IOSTalk.release.xcconfig"; sourceTree = "<group>"; };
 		691C01D1271450B100889430 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		691C01D42714573F00889430 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		691C01D627145CC000889430 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		6999990E2713D94C00A5185F /* IOSTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699999112713D94C00A5185F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699999132713D94C00A5185F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		699999152713D94C00A5185F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		699999152713D94C00A5185F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		699999182713D94C00A5185F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6999991A2713D94D00A5185F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6999991D2713D94D00A5185F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		691C01D32714572100889430 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				691C01D42714573F00889430 /* UIColor.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		691C01D82714658B00889430 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				699999152713D94C00A5185F /* SplashViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		699999052713D94C00A5185F = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +85,16 @@
 		699999102713D94C00A5185F /* IOSTalk */ = {
 			isa = PBXGroup;
 			children = (
+				691C01D82714658B00889430 /* ViewControllers */,
+				691C01D32714572100889430 /* Extention */,
 				691C01D1271450B100889430 /* GoogleService-Info.plist */,
 				699999112713D94C00A5185F /* AppDelegate.swift */,
 				699999132713D94C00A5185F /* SceneDelegate.swift */,
-				699999152713D94C00A5185F /* ViewController.swift */,
 				699999172713D94C00A5185F /* Main.storyboard */,
 				6999991A2713D94D00A5185F /* Assets.xcassets */,
 				6999991C2713D94D00A5185F /* LaunchScreen.storyboard */,
 				6999991F2713D94D00A5185F /* Info.plist */,
+				691C01D627145CC000889430 /* RemoteConfigDefaults.plist */,
 			);
 			path = IOSTalk;
 			sourceTree = "<group>";
@@ -155,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6999991E2713D94D00A5185F /* LaunchScreen.storyboard in Resources */,
+				691C01D727145CC000889430 /* RemoteConfigDefaults.plist in Resources */,
 				691C01D2271450B200889430 /* GoogleService-Info.plist in Resources */,
 				6999991B2713D94D00A5185F /* Assets.xcassets in Resources */,
 				699999192713D94C00A5185F /* Main.storyboard in Resources */,
@@ -210,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				699999162713D94C00A5185F /* ViewController.swift in Sources */,
+				699999162713D94C00A5185F /* SplashViewController.swift in Sources */,
+				691C01D52714573F00889430 /* UIColor.swift in Sources */,
 				699999122713D94C00A5185F /* AppDelegate.swift in Sources */,
 				699999142713D94C00A5185F /* SceneDelegate.swift in Sources */,
 			);
